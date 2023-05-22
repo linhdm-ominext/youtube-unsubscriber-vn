@@ -8,19 +8,14 @@ function myTimer() {
 
     if (i < els.length) {
 
-        els[i].querySelector("[aria-label^='Unsubscribe from']").click();
+        els[i].querySelector("[aria-label^='Hủy đăng ký']").click();
 
         setTimeout(function () {
 
-            var unSubBtn = document.getElementById("confirm-button").click();
+            var unSubBtn = document.getElementById("confirm-button").querySelector("[aria-label^='Hủy đăng ký']").click();
 
         }, 2000);
 
-        setTimeout(function () {
-
-            els[i].parentNode.removeChild(els[i]);
-
-        }, 2000);
 
     }
 
